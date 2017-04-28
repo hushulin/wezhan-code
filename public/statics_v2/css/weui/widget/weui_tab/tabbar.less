@@ -1,0 +1,61 @@
+@import "../../base/fn";
+
+.weui_tabbar {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f7f7fa;
+
+    &:before {
+        .setTopLine(#979797);
+    }
+}
+
+.weui_tabbar_item {
+    display: block;
+    flex: 1;
+    background: #1f1f1f;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+
+    &:after {
+        .setRightLine(#979797);
+    }
+
+    &.weui_bar_item_on {
+        .weui_tabbar_label {
+            background-color: #2d2d2d;
+            color: #fff;
+        }
+    }
+
+    &:last-child {
+        &:after {
+            content: none;
+        }
+    }
+}
+
+.weui_tabbar_icon {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    & + .weui_tabbar_label {
+        margin-top: 5px;
+    }
+}
+
+.weui_tabbar_label {
+    padding: 12px 0;
+    text-align: center;
+    color: @globalTextColor;
+    font-size: 12px;
+}

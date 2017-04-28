@@ -1,0 +1,62 @@
+.weui_tabbar {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f7f7fa;
+}
+.weui_tabbar:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #979797;
+  color: #979797;
+  transform: scaleY(0.5);
+}
+.weui_tabbar_item {
+  display: block;
+  flex: 1;
+  background: #1f1f1f;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+.weui_tabbar_item:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  border-right: 1px solid #979797;
+  color: #979797;
+  transform: scaleX(0.5);
+}
+.weui_tabbar_item.weui_bar_item_on .weui_tabbar_label {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+.weui_tabbar_item:last-child:after {
+  content: none;
+}
+.weui_tabbar_icon {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+}
+.weui_tabbar_icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.weui_tabbar_icon + .weui_tabbar_label {
+  margin-top: 5px;
+}
+.weui_tabbar_label {
+  padding: 12px 0;
+  text-align: center;
+  color: #b2b2b2;
+  font-size: 12px;
+}

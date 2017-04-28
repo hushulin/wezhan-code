@@ -1,0 +1,23 @@
+.weui_cells_access .weui_cell:not(.no_access) {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.weui_cells_access .weui_cell:not(.no_access):active {
+  background-color: rgba(251, 157, 58, 0.1);
+}
+.weui_cells_access a.weui_cell {
+  color: inherit;
+}
+.weui_cells_access .weui_cell_ft:after {
+  content: " ";
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 6px;
+  width: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8cd;
+  border-style: solid;
+  position: relative;
+  top: -2px;
+  top: -1px;
+  margin-left: .3em;
+}

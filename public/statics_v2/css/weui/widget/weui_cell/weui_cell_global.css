@@ -1,0 +1,82 @@
+.weui_cell {
+  position: relative;
+}
+.weui_cell:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #222222;
+  color: #222222;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+  left: 15px;
+}
+.weui_cell:first-child:before {
+  display: none;
+}
+.weui_cells {
+  margin-top: 1.3333333333333333em;
+  background-color: #000000;
+  line-height: 1.6;
+  font-size: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.weui_cells:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #222222;
+  color: #222222;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+.weui_cells:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #222222;
+  color: #222222;
+  transform-origin: 0 100%;
+  transform: scaleY(0.5);
+}
+.weui_cells_title {
+  margin-top: .77em;
+  margin-bottom: .3em;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #ffffff;
+  font-size: 12px;
+}
+.weui_cells_title + .weui_cells {
+  margin-top: 0;
+}
+.weui_cells_tips {
+  margin-top: .3em;
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 12px;
+}
+.weui_cell {
+  padding: 10px 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.weui_cell_ft {
+  text-align: right;
+  color: #ffffff;
+}
+.weui_cell_primary {
+  flex: 1;
+}
